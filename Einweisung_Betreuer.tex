@@ -1,0 +1,70 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COPYRIGHT: (C) 2012-2015 FAU FabLab and others
+% Bearbeitungen ab 2015-02-20 fallen unter CC-BY-SA 3.0
+% Sobald alle Mitautoren zugestimmt haben, steht die komplette Datei unter CC-BY-SA 3.0. Bis dahin ist der Lizenzstatus aller alten Bestandteile ungeklärt.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newcommand{\basedir}{fablab-document}
+\documentclass{\basedir/fablab-document}
+
+\usepackage{amssymb} % Symbole für Knöpfe
+\usepackage{subfigure,caption}
+\usepackage{eurosym}
+\usepackage{tabularx} % Tabellen mit bestimmtem Breitenverhältnis der Spalten
+\usepackage{wrapfig} % Textumlauf um Bilder
+\renewcommand{\texteuro}{\euro}
+\newcommand{\todoRot}[1]{\textbf{\color{red}{TODO: #1}}}
+%%%%% HACKY
+\usepackage{todonotes}
+\let\todox\todo
+\renewcommand\todo[1]{\todox[inline]{#1}}
+%%%%%
+\newcommand{\pfeil}{\ensuremath{\rightarrow}}
+\newcommand{\kommando}[1]{\texttt{#1}}
+
+% \linespread{1.2}
+
+\fancyhead[C]{\todoRot{unfertig!}}
+\date{2014}
+\author{kontakt@fablab.fau.de}
+\title{Betreuen im FabLab}
+
+\begin{document}
+~
+\section{asdf}
+\subsection{asdf}
+\todo{Präsentation anlegen}
+\todo{Website bedienen}
+\todo{svn und der ganze Krams}
+
+\subsection{Betrieb}
+Wenn zuwenig Geld dabei, Zettel in die Kasse legen mit Name, Kontaktdaten, Betrag. Im Terminal nur das eingeben, was auch wirklich in die Kasse gelegt wurde!
+
+Dinge ausleihen
+\begin{itemize}
+ \item In Ausleihliste im Kassenbuch-Ordner eintragen
+ \item ausreichend Pfand verlangen (es sei denn, der Betreuer möchte selbst dafür haften, z.B. weil er den Ausleiher persönlich kennt)
+ \item Weitere Regeln siehe Ausleihliste. Es gibt kein Recht auf Ausleihen, der Lab-Betrieb darf dadurch nicht behindert werden.
+\end{itemize}
+ , 
+
+Ordnung halten. Wenn andere Leute Unordnung machen, diese höflich aber bestimmt zum Aufräumen auffordern.
+
+Darauf achten, dass keine Nutzer ohne Einweisung alleine an Geräten arbeiten. Im Zweifel lieber einmal zuviel nachfragen, ob der Nutzer die Einweisung schon unterschrieben hat. (gelbe/rote Hinweisschilder beachten)
+
+Müll leeren, sobald er recht voll ist. Dann auch gleich alle Mülleimer im Lab und Besprechungsraum mit einsammeln. Im Zweifelsfall hat der Betreuer am Anfang des Lab-Termins den Müll zu leeren.
+
+Der Besprechungsraum gehört nicht dem Lab, wir sind nur \enquote{geduldet}. Deshalb ist dort besonders auf Sauberkeit zu achten -- ganz egal woher die Unordnung kommt, saubermachen!
+Raumreservierungen für den Besprechungsraum sind über Max möglich. Da andere Leute Zugang zum Besprechungsraum haben, muss die Zwischentür beim Verlassen des Labs geschlossen werden.
+
+\subsection{Zugang}
+Im Kalender eingetragene Termine haben Vorrang. Achtung, \enquote{Schließungszeiten} erscheinen nicht im Kasten auf der Startseite, sondern nur unter Termine.
+
+Es muss immer eine Person mit Schließberechtigung im Lab sein (Es sei denn, der Betreuer muss mal kurz aufs Klo). Wer Leute reinlässt, muss sich um sie kümmern -- mindestens soweit, dass hinterher keine Unordnung ist. Wer geht, muss sicherstellen dass das Lab leer ist oder die Aufsicht an jemanden mit Schließberechtigung übergeben.
+
+Beim Gehen alles ausschalten (siehe Zettel an der Tür).
+
+\subsection{Blindtext}
+\blindtext
+\end{document}
