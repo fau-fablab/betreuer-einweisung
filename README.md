@@ -15,6 +15,7 @@ git clone --recursive git@github.com:fau-fablab/betreuer-einweisung.git
 Technische Details zum Buildserver siehe auf macgyver `/home/buildserver/README`
 
 [![Build Status](https://user.fablab.fau.de/~buildserver/betreuer-einweisung/status.svg)](https://user.fablab.fau.de/~buildserver/betreuer-einweisung/)
+[![TODOs](https://user.fablab.fau.de/~buildserver/betreuer-einweisung/status-todos.svg)](https://user.fablab.fau.de/~buildserver/betreuer-einweisung/)
 
 Lizenz
 ------
