@@ -3,7 +3,7 @@ Betreuer Einweisung
 
 Einweisung des [FAU FabLab](https://fablab.fau.de) für Betreuer.
 
-Die neueste Version der Einweisung aus [github](https://github.com/fau-fablab/betreuer-einweisung) ist als PDF unter https://user.fablab.fau.de/~buildserver/betreuer-einweisung/Einweisung_Betreuer.pdf abrufbar.
+Die neueste Version der Einweisung aus [github](https://github.com/fau-fablab/betreuer-einweisung) ist als PDF unter https://brain.fablab.fau.de/build/betreuer-einweisung/Einweisung_Betreuer.pdf abrufbar.
 
 auschecken
 ----------
@@ -14,8 +14,8 @@ git clone --recursive git@github.com:fau-fablab/betreuer-einweisung.git
 
 Technische Details zum Buildserver siehe auf macgyver `/home/buildserver/README`
 
-[![Build Status](https://user.fablab.fau.de/~buildserver/betreuer-einweisung/status.svg)](https://user.fablab.fau.de/~buildserver/betreuer-einweisung/)
-[![TODOs](https://user.fablab.fau.de/~buildserver/betreuer-einweisung/status-todos.svg)](https://user.fablab.fau.de/~buildserver/betreuer-einweisung/)
+[![Build Status](https://brain.fablab.fau.de/build/betreuer-einweisung/status.svg)](https://brain.fablab.fau.de/build/betreuer-einweisung/)
+[![TODOs](https://brain.fablab.fau.de/build/betreuer-einweisung/status-todos.svg)](https://brain.fablab.fau.de/build/betreuer-einweisung/)
 
 Lizenz
 ------
