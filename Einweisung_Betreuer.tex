@@ -13,6 +13,7 @@
 \usepackage{eurosym}
 \usepackage{tabularx} % Tabellen mit bestimmtem Breitenverhältnis der Spalten
 \usepackage{wrapfig} % Textumlauf um Bilder
+\usepackage{xurl} % Lange Webadressen innerhalb der Seitenbreite umbrechen
 \renewcommand{\texteuro}{\euro}
 \newcommand{\todoRot}[1]{\textbf{\color{red}{TODO: #1}}}
 %%%%% HACKY
@@ -26,12 +27,44 @@
 % \linespread{1.2}
 
 \fancyhead[C]{\todoRot{unfertig!}}
-\date{2014}
+\date{6. Oktober 2026}
 \author{kontakt@fablab.fau.de}
 \title{Betreuen im FabLab}
 
 \begin{document}
 ~
+\section{Einstieg ins Betreuerteam}
+Wir freuen uns über neue Betreuerinnen und Betreuer. Komm zu einem OpenLab, sprich die
+Betreuenden an und hilf zunächst unverbindlich mit. Besuche außerdem ein Betreuertreffen,
+um das Team kennenzulernen und dich vorzustellen. Die Termine findest du unter
+\url{https://fablab.fau.de/termine/}.
+
+\subsection{Erforderliche Einweisungen}
+Für die Mitarbeit als Betreuerin oder Betreuer sind Einweisungen in vier Bereichen erforderlich:
+\begin{enumerate}
+ \item Allgemeine Werkstatteinweisung
+ \item Lasercutter
+ \item 3D-Drucker (SLA und FDM)
+ \item Schneideplotter
+\end{enumerate}
+Die Einweisungen vermitteln den sicheren Umgang mit der Werkstatt und den jeweiligen Maschinen.
+Eine betreuende Person erklärt dir die Bedienung und schaut dir anschließend beim selbständigen
+Arbeiten zu. Die erfolgreiche Einweisung wird mit eurer beider Unterschriften im Einweisungsordner
+festgehalten. Die Einweisungstexte findest du unter \url{https://brain.fablab.fau.de/build/}.
+Diese Betreuereinweisung ergänzt die Werkstatt- und Maschineneinweisungen und ersetzt sie nicht.
+
+\subsection{Regelmäßige Mitarbeit}
+Du kannst OpenLabs betreuen oder andere Aufgaben übernehmen, etwa bei Workshops,
+Veranstaltungen, Materialbeschaffung, Administration oder Reinigung.
+Als Richtwert nennt die Mitmachen-Seite zwei Stunden pro Woche während der Vorlesungszeit;
+alternativ sind zwei Stunden alle zwei Wochen über das gesamte Semester möglich.
+Sprich mit dem Team ab, welche Aufgabe und welcher Umfang für dich passen.
+Für die Betreuung eines OpenLabs ist es sinnvoll, mindestens zu zweit zu sein.
+Schließe dich einem bestehenden Termin an oder stimme einen neuen Termin mit dem Team ab
+und trage ihn im Kalender ein.
+
+Eine ausführliche Beschreibung des Einstiegs findest du unter \url{https://fablab.fau.de/mitmachen/}.
+
 \section{Vernetzung}
 \subsection{Treffen}
 Das FabLab hat zwei Arten von Treffen: das \textbf{Betreuertreffen} und das \textbf{Orgatreffen}.
@@ -41,19 +74,30 @@ Das Orgatreffen dient dazu, über tagtägliche Gegebenheiten zu entscheiden und 
 
 \subsection{Mailingliste und Telegram}
 Die Mailingliste ist das Hauptkommunikationsmittel.
-Abonnieren ist unter \url{https://lists.fau.de/cgi-bin/listinfo/fablab-aktive} möglich.
+Alle Betreuerinnen und Betreuer sollen auf der Liste \texttt{fablab-aktive} angemeldet sein.
+Stelle dich beim Betreuertreffen vor und lass dich auf die Liste eintragen.
+Informationen zur Liste findest du unter \url{https://lists.fau.de/cgi-bin/listinfo/fablab-aktive}.
 Achtung, über die Mailingliste kommen relativ viele Mails, es empfiehlt sich, die Mails nach \texttt{list-id} zu filtern.
+Die Gruppierung nach Thema (Thread) und eigene Mail-Ordner helfen, den Überblick zu behalten.
 
 Für kurzfristige Kommunikation gibt es eine Telegram-Gruppe.
-Um diese zu abonnieren, einfach auf der Mailingliste fragen.
+Die Einladungslinks findest du im internen Wiki; bei Fragen hilft dir das Team.
 Wichtiges sollte dennoch auf die Mailingliste.
 \subsection{Website}
 Wir haben eine Website, um über aktuelle Neuerungen zu berichten und die Termine anzuzeigen.
 Du findest sie unter \url{https://fablab.fau.de}.
-Bitte lege dir einen Benutzer auf der Website an und ergänze die Daten um ein Bild, deine E-Mail-Adresse und deine Telefonnummer.
-Diese Informationen werden nur intern angezeigt und dienen dazu, dich schnell erreichen zu können.
+Lass dir ein Benutzerkonto von der Administration anlegen und freischalten.
+Wende dich dazu an \href{mailto:admins@fablab.fau.de}{admins@fablab.fau.de}.
+Verwende deinen vollständigen Namen und ergänze dein Profil um die erforderlichen Kontaktdaten
+und deine FAU-ID. Die FAU-ID steht auf der Rückseite der FAUcard und wird für die Türfreischaltung
+benötigt. Wenn du keine FAUcard hast, sprich das Team darauf an. Ein Profilfoto ist freiwillig,
+hilft den anderen Betreuenden aber dabei, dich zu erkennen.
 
-Außerdem kannst du mit einem Benutzer, der als Betreuer markiert ist, Beiträge auf der Website anlegen.
+Die Profildaten sind nur für andere Betreuende einsehbar. Wenn du einen Beitrag auf der Website
+veröffentlichst, wird jedoch dein vollständiger Name als Autorin oder Autor öffentlich angezeigt.
+Mit der Rolle \enquote{Redakteur} kannst du Seiten und Termine bearbeiten sowie eigene Projekte
+veröffentlichen. Nachrichtenbeiträge solltest du mit dem Team absprechen.
+Das Benutzerkonto gilt auch für das Wiki unter \url{https://wiki.fablab.fau.de/}.
 
 \subsection{GitHub}
 Viele unserer Dokumente und selbst entwickelten Programme liegen auf GitHub unter \url{https://github.com/fau-fablab/}.
@@ -62,7 +106,9 @@ Wenn du dir einen GitHub-Account anlegst, kannst du Zugriff erhalten.
 \subsection{Server}
 Um \enquote{von außen} auf die Dateifreigabe zuzugreifen, gibt es einen Shell-Server.
 Auf diesen kannst du dich per SSH einloggen und mit Programmen, die das Protokoll SFTP unterstützen, Daten übertragen.
-Um dich auf dem Server zu registrieren, kontaktiere bitte \url{admins@fablab.fau.de}.
+Ein Benutzerkonto auf \texttt{shell.fablab.fau.de} ist optional.
+Um dich auf dem Server zu registrieren, kontaktiere bitte
+\href{mailto:admins@fablab.fau.de}{admins@fablab.fau.de}.
 
 \section{Lab}
 \subsection{Betrieb}
@@ -88,15 +134,35 @@ Der Besprechungsraum gehört uns gemeinsam mit der Studierendenvertretung. Desha
 Raumreservierungen für den Besprechungsraum sind über Max möglich. Da andere Leute Zugang zum Besprechungsraum haben, muss die Zwischentür beim Verlassen des Labs geschlossen werden.
 
 \subsection{Zugang}
+Für die Schließberechtigung müssen die Voraussetzungen für die Mitarbeit erfüllt sein.
+Nimm an mindestens einem Betreuertreffen teil und stelle dich vor.
+Wenn dies im Protokoll festgehalten ist, kannst du die für Schließberechtigungen zuständige Person
+benachrichtigen. Die Zuständigkeiten findest du auf \url{https://fablab.fau.de/kontakt/}.
+Die Schließberechtigung ermöglicht dir rund um die Uhr den Zugang zum FabLab und zum angrenzenden
+FSV-Raum. Sie entbindet dich nicht von den folgenden Regeln für Termine, Aufsicht und Abschließen.
+
 Im Kalender eingetragene Termine haben Vorrang. Achtung, \enquote{Schließungszeiten} erscheinen nicht im Kasten auf der Startseite, sondern nur unter Termine.
 
 Es muss immer eine Person mit Schließberechtigung im Lab sein (es sei denn, der Betreuer muss mal kurz aufs Klo). Wer Leute reinlässt, muss sich um sie kümmern -- mindestens so weit, dass hinterher keine Unordnung ist. Wer geht, muss sicherstellen, dass das Lab leer ist oder die Aufsicht an jemanden mit Schließberechtigung übergeben.
 
 Beim Gehen alles ausschalten (siehe Zettel an der Tür).
 
+\clearpage
+\section{Checkliste für den Einstieg}
+\begin{itemize}
+ \item Beim OpenLab mitgeholfen und mit dem Team gesprochen
+ \item Am Betreuertreffen teilgenommen und vorgestellt; Teilnahme im Protokoll festgehalten
+ \item Allgemeine Werkstatteinweisung erhalten und verstanden
+ \item Lasercutter-Einweisung erhalten und geübt
+ \item 3D-Drucker-Einweisungen für SLA und FDM erhalten und geübt
+ \item Schneideplotter-Einweisung erhalten und geübt
+ \item Auf der Mailingliste \texttt{fablab-aktive} angemeldet
+ \item Website-Benutzerkonto erstellt und freigeschaltet; Profil und FAU-ID ergänzt
+ \item Regelmäßige Aufgabe abgesprochen und gegebenenfalls OpenLab-Termin eingetragen
+ \item Nach Erfüllung der Voraussetzungen die Schließberechtigung beantragt
+\end{itemize}
+
 
 \ccLicense{betreuer-einweisung}{Einweisung Betreuer}
-
-Dieses Dokument stammt aus fau-fablab/betreuer-einweisung@\Revision{}.
 
 \end{document}
