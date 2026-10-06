@@ -1,4 +1,4 @@
-Betreuer Einweisung
+Betreuereinweisung
 ===================
 
 Einweisung des [FAU FabLab](https://fablab.fau.de) für Betreuerinnen und Betreuer.
@@ -6,9 +6,23 @@ Einweisung des [FAU FabLab](https://fablab.fau.de) für Betreuerinnen und Betreu
 Inhalt
 ------
 
-- Vernetzung: Betreuer- und Orgatreffen, Mailingliste, Telegram, Website, GitHub, Server
+- Einstieg: Kennenlernen des Teams, vier Einweisungsbereiche, regelmäßige Mitarbeit
+- Vernetzung: Betreuer- und Orgatreffen, Mailingliste, Telegram, Website-Profil, GitHub, Server
 - Laborbetrieb: Kasse, Ausleihe, Ordnung, Müll, Essensecke, Besprechungsraum
 - Zugang: Schließberechtigung, Verantwortung für Anwesende, Abschließen
+- Checkliste für neue Betreuerinnen und Betreuer
+
+Die Betreuereinweisung ergänzt die allgemeine Werkstatteinweisung und die
+Maschineneinweisungen für Lasercutter, 3D-Drucker (SLA und FDM) und Schneideplotter.
+Sie ersetzt diese Einweisungen nicht.
+
+Das PDF verwendet das gemeinsame FabLab-Dokumentlayout mit Titelblock,
+Versionsanzeige, verlinktem Inhaltsverzeichnis und einer abhakbaren Checkliste.
+
+Informationen zum Einstieg und die aktuellen Termine:
+
+- [Mitmachen](https://fablab.fau.de/mitmachen/)
+- [Termine](https://fablab.fau.de/termine/)
 
 Download
 --------
