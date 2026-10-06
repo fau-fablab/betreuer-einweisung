@@ -16,6 +16,9 @@ Die Betreuereinweisung ergänzt die allgemeine Werkstatteinweisung und die
 Maschineneinweisungen für Lasercutter, 3D-Drucker (SLA und FDM) und Schneideplotter.
 Sie ersetzt diese Einweisungen nicht.
 
+Das PDF verwendet das gemeinsame FabLab-Dokumentlayout mit Titelblock,
+Versionsanzeige, verlinktem Inhaltsverzeichnis und einer abhakbaren Checkliste.
+
 Informationen zum Einstieg und die aktuellen Termine:
 
 - [Mitmachen](https://fablab.fau.de/mitmachen/)

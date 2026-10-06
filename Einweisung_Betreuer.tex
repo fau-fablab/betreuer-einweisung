@@ -8,31 +8,32 @@
 \newcommand{\basedir}{fablab-document}
 \documentclass{\basedir/fablab-document}
 
-\usepackage{amssymb} % Symbole für Knöpfe
-\usepackage{subfigure,caption}
-\usepackage{eurosym}
-\usepackage{tabularx} % Tabellen mit bestimmtem Breitenverhältnis der Spalten
-\usepackage{wrapfig} % Textumlauf um Bilder
+\usepackage{amssymb} % Abhakfelder in der Checkliste
 \usepackage{xurl} % Lange Webadressen innerhalb der Seitenbreite umbrechen
-\renewcommand{\texteuro}{\euro}
-\newcommand{\todoRot}[1]{\textbf{\color{red}{TODO: #1}}}
-%%%%% HACKY
-\usepackage{todonotes}
-\let\todox\todo
-\renewcommand\todo[1]{\todox[inline]{#1}}
-%%%%%
-\newcommand{\pfeil}{\ensuremath{\rightarrow}}
-\newcommand{\kommando}[1]{\texttt{#1}}
 
-% \linespread{1.2}
-
-\fancyhead[C]{\todoRot{unfertig!}}
-\date{6. Oktober 2026}
+\date{\today}
+% Einheitliche Versionsanzeige wie in der 3D-Drucker-Einweisung.
+\InputIfFileExists{version}{}{\newcommand{\Version}{Entwurf \today}}
+\fancyfoot[R]{Version \Version}
 \author{kontakt@fablab.fau.de}
-\title{Betreuen im FabLab}
+\title{Betreuereinweisung}
 
 \begin{document}
-~
+\maketitle
+\begin{center}
+Für Betreuerinnen und Betreuer des \textbf{FAU FabLab}\\[1mm]
+{\small Version \Version}
+\end{center}
+
+Diese Einweisung begleitet deinen Einstieg ins Team und dient als Nachschlagewerk
+für Kommunikation, Laborbetrieb und Zugang. Sie ergänzt die allgemeine Werkstatteinweisung
+und die Maschineneinweisungen.
+
+\renewcommand{\contentsname}{Inhaltsverzeichnis / Betreuungsablauf}
+\setcounter{tocdepth}{2}
+\tableofcontents
+\clearpage
+
 \section{Einstieg ins Betreuerteam}
 Wir freuen uns über neue Betreuerinnen und Betreuer. Komm zu einem OpenLab, sprich die
 Betreuenden an und hilf zunächst unverbindlich mit. Besuche außerdem ein Betreuertreffen,
@@ -110,30 +111,34 @@ Ein Benutzerkonto auf \texttt{shell.fablab.fau.de} ist optional.
 Um dich auf dem Server zu registrieren, kontaktiere bitte
 \href{mailto:admins@fablab.fau.de}{admins@fablab.fau.de}.
 
-\section{Lab}
-\subsection{Betrieb}
+\section{Laborbetrieb}
+\subsection{Kasse und Bezahlung}
 Wenn zu wenig Geld dabei, Zettel in die Kasse (hinten in der Betreuerschublade) legen mit Name, Kontaktdaten, Betrag.
 Im Terminal nur das eingeben, was auch wirklich in die Kasse gelegt wurde!
 
-Dinge ausleihen
+\subsection{Ausleihe}
 \begin{itemize}
  \item In Ausleihliste im Kassenbuch-Ordner eintragen
  \item ausreichend Pfand verlangen (es sei denn, der Betreuer möchte selbst dafür haften, z.B. weil er den Ausleiher persönlich kennt)
  \item Weitere Regeln siehe Ausleihliste. Es gibt kein Recht auf Ausleihen, der Lab-Betrieb darf dadurch nicht behindert werden.
 \end{itemize}
 
+\subsection{Ordnung und sichere Maschinennutzung}
 Ordnung halten. Wenn andere Leute Unordnung machen, diese höflich aber bestimmt zum Aufräumen auffordern.
 
 Darauf achten, dass keine Nutzer ohne Einweisung alleine an Geräten arbeiten. Im Zweifel lieber einmal zu viel nachfragen, ob der Nutzer die Einweisung schon unterschrieben hat. (gelbe/rote Hinweisschilder beachten)
 
+\subsection{Müll und Essensecke}
 Müll leeren, sobald er recht voll ist. Dann auch gleich alle Mülleimer im Lab und Besprechungsraum mit einsammeln. Im Zweifelsfall hat der Betreuer am Anfang des Lab-Termins den Müll zu leeren.
 
 Essensecke. Die Essensecke ist immer sauber zu halten. Ganz besonders wichtig ist darauf zu achten, dass Chemie- und Essensecke sich nicht \enquote{vermischen}.
 
+\subsection{Besprechungsraum}
 Der Besprechungsraum gehört uns gemeinsam mit der Studierendenvertretung. Deshalb ist dort besonders auf Sauberkeit zu achten -- ganz egal, woher die Unordnung kommt, saubermachen!
 Raumreservierungen für den Besprechungsraum sind über Max möglich. Da andere Leute Zugang zum Besprechungsraum haben, muss die Zwischentür beim Verlassen des Labs geschlossen werden.
 
-\subsection{Zugang}
+\section{Zugang und Abschließen}
+\subsection{Schließberechtigung}
 Für die Schließberechtigung müssen die Voraussetzungen für die Mitarbeit erfüllt sein.
 Nimm an mindestens einem Betreuertreffen teil und stelle dich vor.
 Wenn dies im Protokoll festgehalten ist, kannst du die für Schließberechtigungen zuständige Person
@@ -141,28 +146,32 @@ benachrichtigen. Die Zuständigkeiten findest du auf \url{https://fablab.fau.de/
 Die Schließberechtigung ermöglicht dir rund um die Uhr den Zugang zum FabLab und zum angrenzenden
 FSV-Raum. Sie entbindet dich nicht von den folgenden Regeln für Termine, Aufsicht und Abschließen.
 
+\subsection{Termine und Aufsicht}
 Im Kalender eingetragene Termine haben Vorrang. Achtung, \enquote{Schließungszeiten} erscheinen nicht im Kasten auf der Startseite, sondern nur unter Termine.
 
 Es muss immer eine Person mit Schließberechtigung im Lab sein (es sei denn, der Betreuer muss mal kurz aufs Klo). Wer Leute reinlässt, muss sich um sie kümmern -- mindestens so weit, dass hinterher keine Unordnung ist. Wer geht, muss sicherstellen, dass das Lab leer ist oder die Aufsicht an jemanden mit Schließberechtigung übergeben.
 
+\subsection{Lab verlassen}
 Beim Gehen alles ausschalten (siehe Zettel an der Tür).
 
-\clearpage
 \section{Checkliste für den Einstieg}
 \begin{itemize}
- \item Beim OpenLab mitgeholfen und mit dem Team gesprochen
- \item Am Betreuertreffen teilgenommen und vorgestellt; Teilnahme im Protokoll festgehalten
- \item Allgemeine Werkstatteinweisung erhalten und verstanden
- \item Lasercutter-Einweisung erhalten und geübt
- \item 3D-Drucker-Einweisungen für SLA und FDM erhalten und geübt
- \item Schneideplotter-Einweisung erhalten und geübt
- \item Auf der Mailingliste \texttt{fablab-aktive} angemeldet
- \item Website-Benutzerkonto erstellt und freigeschaltet; Profil und FAU-ID ergänzt
- \item Regelmäßige Aufgabe abgesprochen und gegebenenfalls OpenLab-Termin eingetragen
- \item Nach Erfüllung der Voraussetzungen die Schließberechtigung beantragt
+\setlength{\itemsep}{2pt}
+\setlength{\parsep}{0pt}
+ \item[$\square$] Beim OpenLab mitgeholfen und mit dem Team gesprochen
+ \item[$\square$] Am Betreuertreffen teilgenommen und vorgestellt; Teilnahme im Protokoll festgehalten
+ \item[$\square$] Allgemeine Werkstatteinweisung erhalten und verstanden
+ \item[$\square$] Lasercutter-Einweisung erhalten und geübt
+ \item[$\square$] 3D-Drucker-Einweisungen für SLA und FDM erhalten und geübt
+ \item[$\square$] Schneideplotter-Einweisung erhalten und geübt
+ \item[$\square$] Auf der Mailingliste \texttt{fablab-aktive} angemeldet
+ \item[$\square$] Website-Benutzerkonto erstellt und freigeschaltet; Profil und FAU-ID ergänzt
+ \item[$\square$] Regelmäßige Aufgabe abgesprochen und gegebenenfalls OpenLab-Termin eingetragen
+ \item[$\square$] Nach Erfüllung der Voraussetzungen die Schließberechtigung beantragt
 \end{itemize}
 
 
+\clearpage
 \ccLicense{betreuer-einweisung}{Einweisung Betreuer}
 
 \end{document}
